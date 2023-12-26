@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Content/Doctor.js"></script>
+
+<h2>Index</h2>
+
+
+<label>DocName</label>
+<br />
+<input type="text" id="txtName" class="form-control" placeholder="enter your Name" />
+<br />
+
+<label>DocMobile</label>
+<br />
+<input type="text" id="txtMobile" class="form-control" placeholder="Enter your Mobile" />
+<br />
+
+<label>Email</label>
+<br />
+<input type="text" id="txtEmail" class="form-control" placeholder="Enter your Email" />
+<br />
+
+<label>State</label>
+<br />
+<input type="text" id="txtState" class="form-control" placeholder="Enter your State" />
+<br />
+
+<label>City</label>
+<br />
+<input type="text" id="txtCity" class="form-control" placeholder="Enter your City" />
+<br />
+
+<input type="submit" class="btn btn-success" onclick="SaveDoctor()" />
+<div>
+    <input type="text" id="txtSearch" />
+    <button type="button" onclick="GetDoctorList()">Search</button>
+    <div class="card p-3">
+        <div class="table-responsive">
+            <table id="tblDoctor" class="table table-bordered table-hover table-striped" style="width:100%;">
+                <thead class="text-white bg-dark">
+                    <tr>
+                        <td class="text-white bg-dark">DocId</td>
+                        <td class="text-white bg-dark">DocName</td>
+                        <td class="text-white bg-dark">DocMobile</td>
+                        <td class="text-white bg-dark">Email</td>
+                        <td class="text-white bg-dark">State</td>
+                        <td class="text-white bg-dark">City</td>
+                        <td class="text-white bg-dark">PatientName</td>
+                        <td class="text-white bg-dark">PatientMobile</td>
+                    </tr>
+
+                </thead>
+
+                <tbody></tbody>
+
+            </table>
+
+        </div>
+    </div>
+</div>
